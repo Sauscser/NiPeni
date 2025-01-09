@@ -1,0 +1,24 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-nipeni-dev-0f9fb-authRole",
+      "UnauthRoleArn": "arn:aws:iam::870395359033:role/amplify-nipeni-dev-0f9fb-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::870395359033:role/amplify-nipeni-dev-0f9fb-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-nipeni-dev-0f9fb-deployment",
+      "UnauthRoleName": "amplify-nipeni-dev-0f9fb-unauthRole",
+      "StackName": "amplify-nipeni-dev-0f9fb",
+      "StackId": "arn:aws:cloudformation:us-east-1:870395359033:stack/amplify-nipeni-dev-0f9fb/7b617320-baac-11ef-9fee-129d494926df",
+      "AmplifyAppId": "d3lcvn9uc3mycd"
+    },
+    "categories": {
+      "auth": {
+        "nipeni1008d614": {},
+        "userPoolGroups": {}
+      },
+      "api": {
+        "nipeni": {}
+      }
+    }
+  }
+}

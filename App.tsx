@@ -1,12 +1,26 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
+import React from 'react';
+import { Authenticator } from '@aws-amplify/ui-react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import RootNav from './Navigation/HomeTabNav'
+// App.js
+import { Amplify } from 'aws-amplify';
+import amplifyconfig from './src/amplifyconfiguration.json';
+Amplify.configure(amplifyconfig);
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <Authenticator.Provider>
+      <Authenticator>
+        <SafeAreaProvider>    
+        <RootNav/>
       <StatusBar style="auto" />
-    </View>
+    
+    </SafeAreaProvider>
+      </Authenticator>
+    </Authenticator.Provider>
   );
 }
 
@@ -18,3 +32,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+
+// Configure Amplify
+
+
+// Export App with Authentication
+export default App;
